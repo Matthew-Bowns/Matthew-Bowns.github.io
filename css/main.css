@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Background image ====================================== */
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-credit {
+    position: absolute;
+    color: rgba(144, 159, 190, 0.541);
+    font-style: italic;
+    right: 15%;
+    bottom: 23%;
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+
+/* Home Page Logo & Menu ====================================== */
+.centre-box {
+    position: absolute;
+    min-width: 22rem;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+}
+
+.centre-box img {
+    width: 100%;
+}
+
+/* Navigation Menu ====================================== */
+.navigation {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+
+.navigation button {
+    font-size: 1.3rem;
+    background: none;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .navigation button {
+        font-size: 1.1rem;
+    }
+}
+
+.navigation button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Social Media Links ====================================== */
+.social-widget {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,-50%);
+    height: 3.2rem;
+}
+
+.social-widget ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.social-widget img {
+    padding: 0.3rem;
+    height: 100%;
+    margin: 0 2px;
+    transition: padding 0.2s;
+}
+
+.social-widget img:hover {
+    padding: 0.1rem;
+    cursor: pointer;
+}
+
+/* Header & Contact Area ====================================== */
+
+.nav-header {
+    max-width: 34.3rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.content-area {
+    width: 740px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* About me ========================================== */
+.about-me-area {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 4rem auto;
+    column-gap: 1rem;
+}
+
+.about-me {
+    background-color: #EAEAEA;
+    font-size: 0.9rem;
+    padding: 2rem;
+}
+
+.about-me-area img {
+    width: 100%;
+}
+
+.about-me h1 {
+    padding: 0 0 1rem 0;
+    line-height: 1.6rem;
+}
+
+.about-me p {
+    padding: 0.3rem 0;
+    line-height: 1.2rem;
+}
+
+@media screen and (max-width: 650px) {
+    .about-me-area {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* My Work ========================================== */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-text {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.gallery img {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    object-fit: cover;
+    margin: 0.1rem;
+    max-width: 15rem;
+    height: 10rem;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+    border-color: white;
+}
+
+.gallery-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    z-index: 100;
+}
+
+.gallery-image-container {
+    width: 75%;
+    max-width: 2000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.gallery-image-container img {
+    width: 100%;
+}
+
+.close-popup-btn {
+    background-color: rgba(0, 0, 0, 0.534);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.548);
+    border-width: 2px;
+    color: white;
+    font-size: 180%;
+    z-index: 110;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.close-popup-btn:hover {
+    background-color: rgba(255, 0, 0, 0.733);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.credit-heading {
+    color: white;
+    font-weight: normal;
+    margin: 2rem 0 0 0;
+}
+
+.credits {
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+
+.credits a {
+    color: #000712;
+}
+
+.credit {
+    background-color: #EAEAEA;
+    display: grid;
+    grid-template-columns: 3.2fr 3fr 0.5fr;
+    padding: 0.6rem 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.film-type {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.credit-type {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.credit-date {
+    grid-column: 4;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Contact form ========================= */
+
+/* Page styling without contact form ======= */
+
+.font-area {
+    color: white;
+    text-align: center;
+}
+
+.font-area h3 {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.font-area p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.font-area a {
+    color: white;
+}
+
+/* ======================================== */
+
+.required::before {
+    content: "*";
+    font-size: 1.3rem;
+    color: red;
+}
+
+label {
+    color: white;
+    padding: 1rem 0 0.2rem 0;
+}
+
+input[type=text], [type=email] {
+    padding: 0.6rem 0.5rem;
+    font-size: 1rem;
+}
+
+.form-container {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: white;
+}
+
+.form-container p {
+    text-align: center;
+    letter-spacing: 0.0rem;
+    padding-top: 7rem;
+}
+
+.form-container h3 {
+    text-align: center;
+    letter-spacing: 0.0rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+form {
+    display: none;
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+input[type=submit] {
+    border: none;
+    width: 80%;
+    margin: 1.2rem auto;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    color: #121D2B;
+    font-weight: bold;
+    background-color: #F8C625;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #f7da7d;
+}
