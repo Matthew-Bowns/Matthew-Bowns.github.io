@@ -150,33 +150,62 @@ body {
 
 /* My Work ========================================== */
 .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.gallery-text {
-    color: white;
-    text-align: center;
     width: 100%;
-    padding: 2rem;
+    position: relative;
 }
 
-.gallery img {
+.gallery-text, .gallery p {
+    color: white;
+    width: 100%;
+}
+
+.gallery-image {
     border-color: transparent;
+    pointer-events: none;
     border-style: solid;
     border-width: 3px;
     object-fit: cover;
     margin: 0.1rem;
-    max-width: 15rem;
-    height: 10rem;
+    width: 100%;
 }
 
-.gallery img:hover {
+.slide-info {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 80% auto;
+    min-height: 3rem;
+    align-items: center;
+}
+
+.slide-info a {
+    height: 100%;
+}
+
+.gallery-link-btn {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #F8C625;
+}
+
+.gallery-link-btn:hover {
+    background-color: #f7da7d;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
     cursor: pointer;
     border-color: white;
+}
+
+.gallery-slide {
+    display: grid;
+    grid-template-rows: auto 2rem;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .gallery-overlay {
@@ -198,6 +227,55 @@ body {
 
 .gallery-image-container img {
     width: 100%;
+}
+
+.active-slide {
+    opacity: 100%;
+    pointer-events: all;
+}
+
+.arrow {
+    background-color: rgba(255, 255, 255, 0.144);
+    position: absolute;
+    z-index: 100;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    bottom: 10%;
+}
+
+.left-arrow hr {
+    width: 0;
+	height: 0;
+	border-top: .6rem solid transparent;
+	border-right: 1.2rem solid rgba(255, 255, 255, 0.507);
+	border-bottom: .6rem solid transparent;
+    margin: auto;
+    align-items: center;
+}
+
+.right-arrow hr {
+    width: 0;
+	height: 0;
+	border-top: .6em solid transparent;
+	border-left: 1.2rem solid rgba(255, 255, 255, 0.507);
+	border-bottom: .6rem solid transparent;
+    margin: auto;
+    align-items: center;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.514);
+    transition: background-color .2s;
+}
+
+.left-arrow {
+    left: 2%;
+}
+
+.right-arrow {
+    right: 2%;
 }
 
 .close-popup-btn {
