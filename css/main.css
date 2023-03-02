@@ -149,6 +149,7 @@ body {
 }
 
 /* My Work ========================================== */
+
 .gallery {
     width: 100%;
     position: relative;
@@ -159,7 +160,12 @@ body {
     width: 100%;
 }
 
-.gallery-image {
+.gallery-image-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.gallery-image-wrapper img {
     border-color: transparent;
     pointer-events: none;
     border-style: solid;
@@ -241,7 +247,7 @@ body {
     width: 3rem;
     height: 3rem;
     display: flex;
-    bottom: 10%;
+    bottom: 1rem;
 }
 
 .left-arrow hr {
@@ -271,11 +277,11 @@ body {
 }
 
 .left-arrow {
-    left: 2%;
+    left: .8rem;
 }
 
 .right-arrow {
-    right: 2%;
+    right: .8rem;
 }
 
 .close-popup-btn {
@@ -300,6 +306,12 @@ body {
 
 .hidden {
     display: none;
+}
+
+.credit-section {
+    width: 100%;
+    background-color: white;
+    height: 5rem;
 }
 
 .credit-heading {

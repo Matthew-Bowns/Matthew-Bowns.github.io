@@ -30,29 +30,37 @@
 
     <div class="content-area">
 
-        <div class="gallery">
-            <div class="gallery-slide active-slide">
-                <img class="gallery-image" src="/work-gallery/100Years100Minutes2022.jpg" alt="" onclick="open_gallery(this)">
-                <div class="arrow left-arrow" onclick="minusSlides()"><hr></div>
-                <div class="arrow right-arrow" onclick="plusSlides()"><hr></div>
-                <div class="slide-info">
-                    <p>From: 100 Years 100 Minutes</p>
-                    <a href="#">
-                        <button class="gallery-link-btn">Watch Now</button>
-                    </a>
+            <div class="gallery">
+                <div class="gallery-slide active-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="/work-gallery/100Years100Minutes2022.jpg" alt="" onclick="open_gallery(this)">
+                        <div class="arrow left-arrow" onclick="minusSlides()"><hr></div>
+                        <div class="arrow right-arrow" onclick="plusSlides()"><hr></div>
+                    </div>
+                    <div class="slide-info">
+                        <p>From: 100 Years 100 Minutes</p>
+                        <a href="#">
+                            <button class="gallery-link-btn">Watch Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <div class="gallery-image-wrapper">
+                        <img src="/work-gallery/ChurchesOfWentworth2022.jpg" alt="" onclick="open_gallery(this)">
+                        <div class="arrow left-arrow" onclick="minusSlides()"><hr></div>
+                        <div class="arrow right-arrow" onclick="plusSlides()"><hr></div>
+                    </div>
+                    <div class="slide-info">
+                        <p>From: The Churches of Wentworth</p>
+                        <a href="#">
+                            <button class="gallery-link-btn">Watch Now</button>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="gallery-slide">
-                <img class="gallery-image" src="/work-gallery/ChurchesOfWentworth2022.jpg" alt="" onclick="open_gallery(this)">
-                <div class="arrow left-arrow" onclick="minusSlides()"><hr></div>
-                <div class="arrow right-arrow" onclick="plusSlides()"><hr></div>
-                <div class="slide-info">
-                    <p>From the Churches of Wentworth</p>
-                    <a href="#">
-                        <button class="gallery-link-btn">Watch Now</button>
-                    </a>
-                </div>
-            </div>
+        
+        <div class="credit-section">
+
         </div>
 
     </div>
@@ -87,10 +95,14 @@ function setCurrentSlide(n){
 
 function plusSlides() {
     showSlides(slideIndex += 1);
+    clearInterval(timer);
+    autoSlide();
 }
 
 function minusSlides() {
     showSlides(slideIndex -= 1);
+    clearInterval(timer);
+    autoSlide();
 }
 
 function showSlides(n){
