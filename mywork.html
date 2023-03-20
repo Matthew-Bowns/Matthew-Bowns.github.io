@@ -1,225 +1,225 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MrBowns My Work</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/main.css">
 </head>
 
-<body style="background-image: url('/Background/Mywork_Background.jpg');">
+<body style="background-image: url(/Background/Mywork_Background.jpg);">
 
     <div class="nav-header">
         <div class="navigation">
-            <a href="index.html"><button>Home</button></a>
-            <a href="about.html"><button>About</button></a>
-            <a href="mywork.html"><button>My Work</button></a>
-            <a href="contact.html"><button>Contact</button></a>
+            <a href="http://localhost:3000/index.html"><button>Home</button></a>
+            <a href="http://localhost:3000/about.html"><button>About</button></a>
+            <a href="http://localhost:3000/mywork.html"><button>My Work</button></a>
+            <a href="http://localhost:3000/contact.html"><button>Contact</button></a>
         </div>
     </div>
     <div class="content-area">
-        <p class="gallery-text">Click to enlarge:</p>
-        <div class="gallery">
+            <div class="portfolio-wrapper">
 
-        <img src='work-gallery/100Years100Minutes2022.jpg' alt='Joshua Daniels on the set of 100 Years 100 Minutes' onclick='open_gallery(this)'></img>
-        <img src='work-gallery/AHistoryOfStBarts2022.jpg' alt='Stained Glass Window in St Barts Church' onclick='open_gallery(this)'></img>
-        <img src='work-gallery/ChurchesOfWentworth2022.jpg' alt='Joshua Daniels walking through Wentworth New Church' onclick='open_gallery(this)'></img>
-        <img src='work-gallery/ElsecarThorncliffTramway2023.jpg' alt='Interview Image with lighting diagram' onclick='open_gallery(this)'></img>
-        <img src='/work-gallery/YorkshirePuddingDay2023.jpg' alt='Josh Daniels eating a yorkshire pudding' onclick='open_gallery(this)'></img>
-        <img src='/work-gallery/EcclesfieldChurchInterviews2023.jpg' alt='Interviewee at Ecclesfield Church' onclick='open_gallery(this)'></img>
-        <img src='/work-gallery/EcclesfieldChurchShot1_2023.jpg' alt='Joshua Daniels in the church pews' onclick='open_gallery(this)'></img>
-        <img src='/work-gallery/EcclesfieldChurchShot2_2023.jpg' alt='Joshua Daniels in front of the memorial' onclick='open_gallery(this)'></img>
-        <img src='/work-gallery/EcclesfieldSaviorShot1_2023.jpg' alt='Joshua Daniels in St Savior Church in Ecclesfield' onclick='open_gallery(this)'></img>
-        <img src='/work-gallery/EcclesfieldSaviorShot2_2023.jpg' alt='Joshua Daniels in St Savior Church in Ecclesfield' onclick='open_gallery(this)'></img>
-
-        </div>
-
-        <h2 class="credit-heading">Credits:</h2>
-        <div class="credits">
-
-                <div class='credit'>
-                    <div>
-                        <h3>A History of Yorkshire Puddings</h3>
-                        <p class='film-type'>Mini Doc</p>
+                <!-- SECTION: 2022-->
+                <!-- The Churches of Wentworth -->
+                <div class="film-wrapper">
+                    <div class="date-header-bar">
+                        <h2>The Churches of Wentworth</h2>
+                        <img class="slate-stripes" src="/images/mrb-clapper-stripes.png" alt="">
                     </div>
-                    <div class="slide-info">
-                        <p>From: 100 Years 100 Minutes</p>
+                    <div class="film-slate">
+                        <div class="video-info">
+                            <p>Documentary Short - Director, Cinematograhper</p>
+                            <div class="link-date-container">
+                                <p class="film-date">2022</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-function-container">
+                                <button class="play-btn" data-embed="28ZDoC1PhnA" onclick="load_videoPlayer(this,0)"></button>
+                                <hr>
+                                <img src="/images/thumbnails/The Churches of Wentworth.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-slide">
-                    <div class="gallery-image-wrapper">
-                        <img src="/work-gallery/ChurchesOfWentworth2022.jpg" alt="" loading="lazy" onclick="open_gallery(this)">
-                        <div class="arrow left-arrow" onclick="minusSlides()"><hr></div>
-                        <div class="arrow right-arrow" onclick="plusSlides()"><hr></div>
+
+                <!-- The History of St Barts -->
+                <div class="film-wrapper">
+                    <div class="date-header-bar">
+                        <h2>A History of St Barts</h2>
+                        <img class="slate-stripes" src="/images/mrb-clapper-stripes.png" alt="">
                     </div>
-                    <div class="slide-info">
-                        <p>From: The Churches of Wentworth</p>
-                        <a class="link-btn" href="#">
-                            <button >Watch Now</button>
-                        </a>
+                    <div class="film-slate">
+                        <div class="video-info">
+                            <p>Documentary Short - Director, Cinematograhper</p>
+                            <div class="link-date-container">
+                                <p class="film-date">2022</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-function-container">
+                                <button class="play-btn" data-embed="Re3ekRZvy-4" onclick="load_videoPlayer(this,0)"></button>
+                                <hr>
+                                <img src="/images/thumbnails/St Barts Thumbnail.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- The History of Pickering Church -->
+                <div class="film-wrapper">
+                    <div class="date-header-bar">
+                        <h2>History of Pickering Church</h2>
+                        <img class="slate-stripes" src="/images/mrb-clapper-stripes.png" alt="">
+                    </div>
+                    <div class="film-slate">
+                        <div class="video-info">
+                            <p>Documentary Short - Director, Cinematograhper</p>
+                            <div class="link-date-container">
+                                <p class="film-date">2022</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-function-container">
+                                <button class="play-btn" data-embed="YAAtIf5yFY8" onclick="load_videoPlayer(this,0)"></button>
+                                <hr>
+                                <img src="/images/thumbnails/PickeringChurch_Thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION: 2021-->
+                <!-- The Yorkshire Swan -->
+                <div class="film-wrapper">
+                    <div class="date-header-bar">
+                        <h2>The Yorkshire Swan</h2>
+                        <img class="slate-stripes" src="/images/mrb-clapper-stripes.png" alt="">
+                    </div>
+                    <div class="film-slate">
+                        <div class="video-info">
+                            <p>Horror Short - Writer, Director, Cinematograhper</p>
+                            <div class="link-date-container">
+                                <p class="film-date">2021</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-function-container">
+                                <button class="play-btn" data-embed="FaMK25vPYHc" onclick="load_videoPlayer(this,0)"></button>
+                                <hr>
+                                <img src="/images/thumbnails/TheYorkshireSwan_Thumnail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Expedition Elsecar Doc -->
+                <div class="film-wrapper">
+                    <div class="date-header-bar">
+                        <h2>Expedition Elsecar</h2>
+                        <img class="slate-stripes" src="/images/mrb-clapper-stripes.png" alt="">
+                    </div>
+                    <div class="film-slate">
+                        <div class="video-info">
+                            <p>Documentary Short - Writer, Director, Cinematograhper</p>
+                            <div class="link-date-container">
+                                <p class="film-date">2021</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-function-container">
+                                <button class="play-btn" data-embed="7dSebd2bOuU" onclick="load_videoPlayer(this,0)"></button>
+                                <hr>
+                                <img src="/images/thumbnails/ExpeditionElsecar_Thumb.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION: 2020-->
+                <!-- The Director Horror Film -->
+                <div class="film-wrapper">
+                    <div class="date-header-bar">
+                        <h2>The Director</h2>
+                        <img class="slate-stripes" src="/images/mrb-clapper-stripes.png" alt="">
+                    </div>
+                    <div class="film-slate">
+                        <div class="video-info">
+                            <p>Horror Short - Writer, Director, Cinematograhper</p>
+                            <div class="link-date-container">
+                                <a class="imdb-link" href="https://www.imdb.com/title/tt15200874/">
+                                    <button>
+                                        <img src="/images/imdb-icon.png" alt="">
+                                    </button>
+                                </a>
+                                <p class="film-date">2020</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-function-container">
+                                <button class="play-btn" data-embed="HzkQAngrhBA" onclick="load_videoPlayer(this,0)"></button>
+                                <hr>
+                                <img src="/images/thumbnails/TheDirector_Thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION: 2016-->
+                <!-- Visitor Horror Film -->
+                <div class="film-wrapper">
+                    <div class="date-header-bar">
+                        <h2>Visitor</h2>
+                        <img class="slate-stripes" src="/images/mrb-clapper-stripes.png" alt="">
+                    </div>
+                    <div class="film-slate">
+                        <div class="video-info">
+                            <p>Horror Short - Writer, Director, Cinematograhper</p>
+                            <div class="link-date-container">
+                                <p class="film-date">2016</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-function-container">
+                                <button class="play-btn" data-embed="148559715" onclick="load_videoPlayer(this,1)"></button>
+                                <hr>
+                                <img src="/images/thumbnails/Visitor_Thumbnail.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        
-        <div class="credit-section">
-            <h2>Credits:</h2>
-            <div class="credit">
-                <div class="credit-info">
-                    <h3>The Churches of Wentworth</h3>
-                    <p>2023, Docuemtnary Short, Cinematographer</p>
-                    <p>Westwood 2015</p>
-                </div>
-                <a class="link-btn" href="#">
-                    <button>Learn More</button>
-                </a>
+
             </div>
-            <div class="credit">
-                <div class="credit-info">
-                    <h3>100-Years 100-Minutes</h3>
-                    <p>2023, Web Series, Cinematographer</p>
-                    <p>Self</p>
-                </div>
-                <a class="link-btn" href="#">
-                    <button>Learn More</button>
-                </a>
-            </div>
-            <div class="credit">
-                <div class="credit-info">
-                    <h3>The History of Wentwort Woodhouse</h3>
-                    <p>2023, Docuemtnary Short, Cinematographer</p>
-                    <p>Wentworth Woodhouse</p>
-                </div>
 
-                <div class='credit'>
-                    <div>
-                        <h3>Secrets of the Air Museum</h3>
-                        <p class='film-type'>Documentary</p>
-                    </div>
-                    <p class='credit-type'>Camera-op</p>
-                    <div>
-                        <p class='credit-date'>2022</p>
-                        <a href='https://www.youtube.com/watch?v=9_-9yem_9gA' target='_blank'>Watch</a>
-                    </div>
-                </div>
+            
 
-                <div class='credit'>
-                    <div>
-                        <h3>Echoes of Elsecar</h3>
-                        <p class='film-type'>Documentary</p>
-                    </div>
-                    <p class='credit-type'>Director, DOP</p>
-                    <div>
-                        <p class='credit-date'>2021</p>
-                        <!-- <a href='' target='_blank'>Watch</a> -->
-                    </div>
-                </div>
+    
 
-                <div class='credit'>
-                    <div>
-                        <h3>Expedition Elsecar</h3>
-                        <p class='film-type'>Documentary</p>
-                    </div>
-                    <p class='credit-type'>Writer, Director, DOP</p>
-                    <div>
-                        <p class='credit-date'>2021</p>
-                        <a href='https://www.youtube.com/watch?v=7dSebd2bOuU' target='_blank'>Watch</a>
-                    </div>
-                </div>
 
-                <div class='credit'>
-                    <div>
-                        <h3>The Yorkshire Swan</h3>
-                        <p class='film-type'>Horror Short</p>
-                    </div>
-                    <p class='credit-type'>Writer, Director, DOP</p>
-                    <div>
-                        <p class='credit-date'>2021</p>
-                        <a href='https://www.youtube.com/watch?v=FaMK25vPYHc' target='_blank'>Watch</a>
-                    </div>
-                </div>
 
-                <div class='credit'>
-                    <div>
-                        <h3>Needle's Eye: Myths and Truths</h3>
-                        <p class='film-type'>Mini Documentary</p>
-                    </div>
-                    <p class='credit-type'>Camera-op</p>
-                    <div>
-                        <p class='credit-date'>2021</p>
-                        <a href='https://www.youtube.com/watch?v=85ekqR4KCg8&t' target='_blank'>Watch</a>
-                    </div>
-                </div>
 
-                <div class='credit'>
-                    <div>
-                        <h3>A Most Fascinating Folly</h3>
-                        <p class='film-type'>Mini Documentary</p>
-                    </div>
-                    <p class='credit-type'>Camera-op</p>
-                    <div>
-                        <p class='credit-date'>2022</p>
-                        <a href='https://www.youtube.com/watch?v=NPo4n4LneSA&t' target='_blank'>Watch</a>
-                    </div>
-                </div>
-
-                <div class='credit'>
-                    <div>
-                        <h3>Wentworth Woodhouse: A New History</h3>
-                        <p class='film-type'>Documentary</p>
-                    </div>
-                    <p class='credit-type'>Camera-op</p>
-                    <div>
-                        <p class='credit-date'>2021</p>
-                        <a href='https://www.youtube.com/watch?v=85sTUUyvznE&t' target='_blank'>Watch</a>
-                    </div>
-                </div>
-
-                <div class='credit'>
-                    <div>
-                        <h3>The Director</h3>
-                        <p class='film-type'>Horror Short</p>
-                    </div>
-                    <p class='credit-type'>Writer, Director, DOP</p>
-                    <div>
-                        <p class='credit-date'>2020</p>
-                        <a href='https://www.youtube.com/watch?v=HzkQAngrhBA&t=9s' target='_blank'>Watch</a>
-                    </div>
-                </div>
-
-                <div class='credit'>
-                    <div>
-                        <h3>Historic Rotherham</h3>
-                        <p class='film-type'>Documentary</p>
-                    </div>
-                    <p class='credit-type'>Director, DOP</p>
-                    <div>
-                        <p class='credit-date'>2020</p>
-                        <a href='https://www.youtube.com/watch?v=G5MOQSX5A-s' target='_blank'>Watch</a>
-                    </div>
-                </div>
-
-        </div>
-
-    </div>
-
-</body>
-
-</html>
 
 <script>
-<<<<<<< main
-    var overlay = document.getElementById("gallery-popup");
+    
+    var youTubeCode = 0;
+    var vimeoCode = 1;
 
-    function close_gallery() {
-        overlay.classList.add("hidden");
+    function load_videoPlayer (button,platform){
+        var container = button.parentNode;
+        var embedCode = button.getAttribute("data-embed");
+
+        switch(platform) {
+            case 0:
+                container.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + embedCode + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+                break;
+            case 1:
+                container.innerHTML = '<iframe src="https://player.vimeo.com/video/' + embedCode + '?h=6b66ebd966&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="The Visitor (Short film)"></iframe>';
+                break;
+        }
     }
 
-    function open_gallery(image) {
-        document.getElementById("overlay-image").src = image.src;
-        overlay.classList.remove("hidden");
-    }
-</script>
-
+</script></body></html>
